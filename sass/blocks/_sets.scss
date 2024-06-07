@@ -10,6 +10,7 @@
     }
     &__subtitle{
         width: 100%;
+        margin-top: 41px;
         @include dfc();
         gap: 22px;
     }
@@ -39,7 +40,7 @@
         @include df();
         gap: 3px;
     }
-    &__btn{
+    &__btns{
         @include btn();
         span{
             font-size: 14px;
@@ -67,8 +68,7 @@
     &__content{
         width: 100%;
         @include dfc();
-        gap: 37
-        px;     
+        gap: 37px;     
     }
     &__text{
         width: 100%;
@@ -96,6 +96,7 @@
         @include df(start, center);
         gap: 95px;     
         span{
+            width: 50%;
             font-size: 18px;
             font-weight: 600;
             line-height: 22px;
@@ -103,6 +104,7 @@
         }
     }
     &__price__block{
+        width: 50%;
         text-align: left;
         @include df();
         gap: 12px;
@@ -122,5 +124,180 @@
         width: 0;
         height: 50px;
         border: 1px solid $bg-border;
+    }
+    &__btn{
+        width: 20%;
+        @include btn(16px 94px);
+        background: $bg-light;
+        border-radius: 3px;
+        border: 1px solid $bg-link;
+        @include df();
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 990px){
+    .sets__btn__wrapper{
+        flex-wrap: wrap;
+    }
+    .sets__price{
+        gap: 45px;
+        span{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+    .sets__price__block{
+        img{
+            width: 12px;
+            height: 12px;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+    .sets__btn{
+        padding: 16px 84px;
+    }
+}
+@media (max-width: 900px){
+    .sets__btn__wrapper{
+        flex-wrap: wrap;
+    }
+    .sets__price{
+        gap: 15px;
+        span{
+            padding: 7px 8px 5px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+    .sets__price__block{
+        img{
+            width: 12px;
+            height: 12px;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+    .sets__btn{
+        padding: 16px 70px;
+    }
+}
+@media (max-width: 810px){
+    .sets__btn__wrapper{
+        flex-wrap: wrap;
+    }
+    .sets__price{
+        gap: 15px;
+        span{
+            padding: 7px 8px 5px;
+            font-size: 8px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+    .sets__price__block{
+        img{
+            width: 8px;
+            height: 8px;
+        }
+        p{
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+    .sets__btn{
+        padding: 12px 60px;
+    }
+}
+@media (max-width: 750px){
+    .sets__btn__wrapper{
+        flex-wrap: wrap;
+    }
+    .sets__card{
+        width: calc(50% - 15px);
+    }
+    .sets__price{
+        gap: 15px;
+        span{
+            padding: 14px 21px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    }
+    .sets__price__block{
+        p{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }.sets__btn{
+        padding: 14px 75px;
+    }
+}
+@media (max-width: 610px){
+    .sets__btn__wrapper{
+        flex-wrap: wrap;
+    }
+    .sets__price{
+        gap: 15px;
+        span{
+            padding: 8px 12px 5px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    }
+    .sets__price__block{
+        p{
+            font-size: 9px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+    .sets__btn{
+        padding: 12px 70px;
+    }
+}
+@media (max-width: 490px){
+    .sets__btn__wrapper{
+        flex-wrap: wrap;
+    }
+    .sets__card{
+        width: 100%;
+    }
+    .sets__price{
+        gap: 15px;
+        span{
+            padding: 14px 21px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    }
+    .sets__price__block{
+        p{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+    .sets__btn{
+        padding: 16px 84px;
     }
 }
