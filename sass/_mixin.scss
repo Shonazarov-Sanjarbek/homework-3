@@ -9,16 +9,12 @@
     justify-content: $justify;
     align-items: $align;
 } 
-@mixin btn(){
-    padding: 6px 12px;
+@mixin btn($padding: 6px 12px,){
+    padding: $padding;
     border-radius: 100px;
+    border:  none;
     background: $bg-py;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    text-align: center;
     transition: .5s;
-    color: $bg-text;
     &:hover{
         background: $bg-light;
         border: 1px solid $bg-py;
